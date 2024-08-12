@@ -4,16 +4,21 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 function App(){
+  let foodItems=["Dal","Roti","Rice","Veggies","Fruits","Orange","Banana"];
+  let cars=["Hyundai","bmw","mercedez","Lambo"];
   return <React.Fragment> 
-    <h1>Fragments</h1>
     <h2>Healthy Items</h2>
-    <ul class="list-group">
-  <li class="list-group-item">Dal</li>
-  <li class="list-group-item">Roti</li>
-  <li class="list-group-item">Rice</li>
-  <li class="list-group-item">Veggies</li>
-  <li class="list-group-item">fruits</li>
+    <ul className="list-group">
+      {foodItems.map((items)=>(
+        <li key="{items}" className="list-group-item">{items}</li>
+      ))}
 </ul>
+<h2>Cars list</h2>
+ <ul className="list-group">
+  {cars.map((item)=>(
+    <li key="{items}" className="list-group-item">{item}</li>
+  ))}
+ </ul>
   </React.Fragment> //or <> </>->(Simple form for React Fragments)Does not require importing React object from react..
 }
 export default App;
