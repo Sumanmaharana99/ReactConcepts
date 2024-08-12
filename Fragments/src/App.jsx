@@ -8,11 +8,11 @@ function App(){
     <h1>Fragments</h1>
     <h2>Healthy Items</h2>
     <ul class="list-group">
-  <li class="list-group-item">An active item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
+  <li class="list-group-item">Dal</li>
+  <li class="list-group-item">Roti</li>
+  <li class="list-group-item">Rice</li>
+  <li class="list-group-item">Veggies</li>
+  <li class="list-group-item">fruits</li>
 </ul>
   </React.Fragment> //or <> </>->(Simple form for React Fragments)Does not require importing React object from react..
 }
