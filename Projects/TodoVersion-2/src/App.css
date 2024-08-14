@@ -1,0 +1,12 @@
+input{
+    width: 100%;
+}
+.btn{
+    min-width: 80px;
+}
+.container{
+    margin: 25px;
+}
+.rowElements{
+    margin-bottom: 15px;
+}
