@@ -1,14 +1,21 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import ErrorMessage from "./Components/ErrorMessage";
 import CarsItems from "./Components/CarsItems";
-
+import Container from "./Components/Container";
 function App(){
  let cars=["bmw","Audi","Benz","Ducati","Honda"];
 
- return( <>
- <h1>CARS</h1>
+ return( 
+ <>
+ <Container>
+ <h1 className="car-heading">CARS</h1>
   <ErrorMessage items={cars}></ErrorMessage>
   <CarsItems items={cars}></CarsItems>
+ </Container>
+ <Container>
+ <p>Above are the popular car brands</p>
+ </Container>
  </>
 )};
 export default App;

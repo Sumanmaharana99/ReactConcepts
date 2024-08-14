@@ -10,3 +10,7 @@
 5.CSS modules -prevents global conflicts->jo vi cheezen like classes ids of css multiple modules/components mai defined hai usse global App.css mai rehne do 
 <br>
 6.TodoVersion-2-->learnt props,css module,mapping,fragments
+<br>
+7.Calculator
+<br>
+8>Passing children->Container usage
