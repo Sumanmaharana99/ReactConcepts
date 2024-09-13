@@ -1,5 +1,5 @@
 import styles from "./Display.module.css";
-const Display = () =>{
-return <input className={styles.display} type="text"></input>
+const Display = ({calVal}) =>{
+return <input className={styles.display} type="text" value={calVal}readOnly></input>
 }
 export default Display;

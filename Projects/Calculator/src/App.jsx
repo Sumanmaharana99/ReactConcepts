@@ -1,14 +1,30 @@
+import { useState } from "react";
 import styles from "./App.module.css"
 import ButtonContainer from "./Components/ButtonContainer";
 import Display from "./Components/Display";
 function App(){
-  let buttonName=["c","1","2","+","3","4","-","5","6","*","7","8","/","=","9","0","."]
+ let [calVal,setcalVal]=useState("");
+ const onButtonClick=(buttonItem)=>{
+  console.log(buttonItem);
+  if(buttonItem==="c"){
+         setcalVal("");
+  }
+  else if(buttonItem==="="){
+   const result=eval(calVal);
+   setcalVal(result);
+  }
+  else{
+    const newValue=calVal+buttonItem;
+    setcalVal(newValue);
+  }
+ }
+
 return(
   <>
   <h1>Calculator App</h1>
   <div className={styles.calculator}>
-    <Display></Display>
-    <ButtonContainer buttonName={buttonName}></ButtonContainer>
+    <Display calVal={calVal}></Display>
+    <ButtonContainer onButtonClick={onButtonClick}></ButtonContainer>
   </div>
   </>
 )

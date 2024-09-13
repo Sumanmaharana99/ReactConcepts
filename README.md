@@ -14,3 +14,8 @@
 7.Calculator
 <br>
 8>Passing children->Container usage   
+<br>
+Managing state->to save something useState() is used from react .it is a HOOK;
+<br>
+when we use/declare useState() it returns an array with 2 elements 
+1st element is currentvalue of the state and 2nd is a function to edit the state --->{}->used for object destructuring []->used for array destructuring

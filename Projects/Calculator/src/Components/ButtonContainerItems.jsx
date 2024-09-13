@@ -1,7 +1,7 @@
 import styles from "./ButtonContainerItems.module.css";
-const ButtonContainerItems = ({buttonItem}) =>{
+const ButtonContainerItems = ({buttonItem,onButtonClick}) =>{
 return <>
-<button className={styles.button}>{buttonItem}</button>
+<button className={styles.button} onClick={()=>onButtonClick(buttonItem)}>{buttonItem}</button>
 
 </>
 }
