@@ -8,3 +8,4 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+//React is built in library and React-dom coverts reacts componenets into html code for browser DOM
